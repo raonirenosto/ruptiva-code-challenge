@@ -1,11 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import Form from '../components/UserForm/UserForm';
+import UserForm from '../components/UserForm/UserForm';
+import UserList from '../components/UserList/UserList';
 
 const MainScreen = () => {
   return <View>
     <Text style={styles.text}>Digite seus dados: </Text>
-    <Form />
+    <UserForm />
+    <UserList />
   </View>
 };
 
