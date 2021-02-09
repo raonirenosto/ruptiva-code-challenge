@@ -1,9 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import MainScreen from './src/app/screens/MainScreen'
+import { FirebaseInit } from './src/api/CloudFirestore';
 
 export default function App() {
+  
+  useEffect(() => {
+    FirebaseInit();
+    console.log('Firebase initialized'); 
+  }, []);
+
   return (
     <View style={styles.container}>
       <MainScreen />
