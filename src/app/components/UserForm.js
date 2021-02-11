@@ -83,6 +83,7 @@ const Form = () => {
 
   return (
     <View>
+      <Text style={styles.headerStyle}>Digite seus dados: </Text>
       <Text style={styles.textStyle}>Nome / Razão Social</Text>
       <TextInput 
         autoFocus={true}
@@ -127,6 +128,10 @@ const Form = () => {
 };
 
 const styles = StyleSheet.create({
+  headerStyle: {
+    fontSize: 16,
+    margin: 10
+  },
   textStyle: {
     fontSize: 16,
     marginLeft: 10,
