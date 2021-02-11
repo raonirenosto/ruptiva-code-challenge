@@ -21,8 +21,6 @@ export async function CreateUser(name, document, type) {
     document: document,
     type: type
   });
-
-  console.log('Firebase request')
 };
 
 export async function GetUsers() {
@@ -47,8 +45,6 @@ export async function GetUsers() {
           type: user.type 
         }]
     })
-
-    console.log(users)
 
     return users;
 };
