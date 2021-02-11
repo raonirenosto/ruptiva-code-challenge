@@ -42,7 +42,6 @@ const Form = ({value, onSetValue, onSetValid, onSetErrorMessage, editable}) => {
   }
 
   const onChangeText = (newText) => {
-    console.log("changed")
     onSetValue(newText)
     validate(newText)
   }
