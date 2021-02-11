@@ -19,12 +19,15 @@
     "react-native-web": "~0.13.12"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "jest-expo"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
     "babel-jest": "^26.6.3",
+    "babel-preset-react-native": "^4.0.1",
     "jest": "^26.6.3",
+    "jest-expo": "^40.0.2",
+    "jest-react-native": "^18.0.0",
     "react-test-renderer": "^17.0.1"
   },
   "private": true
