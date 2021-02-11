@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity, Alert } from 'react-native';
-import { GetUsers, DeleteUser } from '../../../api/CloudFirestore';
+import { GetUsers, DeleteUser } from '../../api/CloudFirestore';
 import { cpf, cnpj } from 'cpf-cnpj-validator'; 
 import { Feather } from '@expo/vector-icons'; 
 
