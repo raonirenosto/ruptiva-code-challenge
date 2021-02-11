@@ -5,7 +5,7 @@ import { CreateUser } from '../../api/CloudFirestore'
 import DocumentInput from './DocumentInput';
 import Spinner from './Spinner';
 
-const Form = () => {
+const UserForm = () => {
   const EMPTY_FIELD_MESSAGE = 'Este campo é obrigatório';
 
   const [ name, setName ] = useState('');
@@ -154,4 +154,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Form;
+export default UserForm;

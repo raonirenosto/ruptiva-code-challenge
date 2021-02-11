@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { View, Text, TextInput, StyleSheet,  } from 'react-native';
 import { cpf, cnpj } from 'cpf-cnpj-validator';
 
-const Form = ({value, onSetValue, onSetValid, onSetErrorMessage, editable}) => {
+const DocumentInput = ({value, onSetValue, onSetValid, onSetErrorMessage, editable}) => {
   const EMPTY_FIELD_MESSAGE = 'Este campo é obrigatório';
   const INVALID_DOCUMENT_MESSAGE = 'CPF ou CNPJ inválido'
 
@@ -96,4 +96,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Form;
+export default DocumentInput;
